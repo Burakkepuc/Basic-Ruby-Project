@@ -14,7 +14,7 @@ def substrings(string,dictionary)
   
         i = 0
         while i < string.length
-          puts "String[#{i}]"
+         # puts "String[#{i}]"
              if string[i].include?(word)
              result[word] += 1
              end
@@ -24,7 +24,6 @@ def substrings(string,dictionary)
 
     end
 end
-
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
