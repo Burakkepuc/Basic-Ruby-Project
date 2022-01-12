@@ -31,7 +31,7 @@ def caesar(string,key = 0)
         arr << s
     end
   end
-    return arr.join
+    arr.join
 
 end
 
