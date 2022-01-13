@@ -9,25 +9,20 @@
 
 def substrings(string,dictionary) 
    string = string.downcase.split
-    # puts "string => #{string}"
    dictionary.reduce(Hash.new(0)) do |result,word| # result = {} / word = dictionary word one by one(below,down....sit)      
-  
         i = 0
         while i < string.length
-         # puts "String[#{i}]"
              if string[i].include?(word)
              result[word] += 1
              end
              i += 1
         end
            result
-
     end
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
  x = substrings("Howdy partner, sit down! How's it going?", dictionary)
-
 puts x
 
