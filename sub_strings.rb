@@ -6,7 +6,6 @@
 # Return hash -DONE
 # Substring algorithm -DONE(while)
 
-
 def substrings(string,dictionary) 
    string = string.downcase.split
    dictionary.reduce(Hash.new(0)) do |result,word| # result = {} / word = dictionary word one by one(below,down....sit)      
@@ -25,4 +24,3 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
  x = substrings("Howdy partner, sit down! How's it going?", dictionary)
 puts x
-
